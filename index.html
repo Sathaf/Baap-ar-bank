@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-5xl text-center	">Hi! Welcome to <span class="text-teal-500	">Baap Ar Bank</span> </h1>
+    
+    <section class="bg-lime-500	w-3/4 mx-auto  mt-10 p-10 block">
+       <h3 class="text-2xl mb-5">Pleass Login</h3>
+        <input class="border border-lime-400 w-3/4 rounded" type="email" name="" id="email-field" placeholder="Pls Enter your Email">
+       <input class="border-2 w-3/4 mt-5 rounded	" type="password" name="" id="password-field"placeholder= "Pls Enter your password"> 
+        <br>
+        <button id="login-submit" class="mt-5 bg-yellow-500 px-2 py-2 rounded p-5	">Submit</button>
+    </section>
+    <script>
+        document.getElementById('login-submit').addEventListener('click', function(){
+            const emailField = document.getElementById('email-field');
+            const userEmail = emailField.value;
+            
+
+            const passwordField = document.getElementById("password-field");
+            const userPassword = passwordField.value;
+            if(userEmail == "daud@.com" && userPassword =="daud") {
+                // console.log('susessful')
+                window.location.href = 'index2.html'
+
+            }
+            else{
+                console.log('pls try agin');
+            }
+        })
+
+    </script>
+
+ <script src="js/bank.js"></script>
+</body>
+</html>

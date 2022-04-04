@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<main class=" text-center">
+    <h1 class="text-5xl"> I need some <span class="text-teal-500">Money</span>  </h1>
+   <section>
+    <div  class="text-2xl grid grid-cols-3 gap-2">
+     <div  class="bg-lime-500 w-3/4 m-10 p-5 " >
+        <h4>Diposit</h4>
+        <h2>$<span id="deposit-total">00</span></h2>
+     </div>
+     <div class="bg-green-500 w-3/4 m-10 p-5 " >
+        <h4>withdraw</h4>
+        <h2>$<span id="withdraw-total">00</span></h2>
+     </div>
+     <div class="bg-purple-500 w-3/4 m-10 p-5 " >
+        <h4>Balance</h4>
+        <h2>$<span id="balance-total" >1240</span></h2>
+     </div>
+    </div>
+
+    <div  class=" grid grid-cols-2 gap-2 ">
+        <div  class="bg-lime-500	w-3/4 mx-auto  mt-10 p-10 ">
+           
+            <h2 class="text-3xl">Please Deposit</h2>
+            <input id="deposit-input" class="border border-syan-400  border-2	w-2/4  rounded"  type="" name="" id="">
+            <br>
+            <button   id="deposit-button"  class="mt-5 bg-red-500 px-2 py-2 rounded p-5	">Submit</button>
+        </div>
+        <div class="bg-yellow-500	w-3/4 mx-auto  mt-10 p-10">
+        <h2 class="text-3xl">Please withdraw</h2>
+    
+          <input  id="withdrew-input"  class="border border-syan-400  border-2 w-2/4  rounded"  type="" name="" id="">
+          <br>
+          <button  id="withdrew-button"  class="mt-5 bg-red-500 px-2 py-2 rounded p-5">Submit</button>
+        </div>  
+    </div>
+
+
+   </section>
+     
+
+</main>
+<script src="js/culclution.js"></script>
+</body>
+</html>
